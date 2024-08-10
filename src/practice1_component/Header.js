@@ -79,8 +79,8 @@ class Header extends Component {
 
                             <div className="header-logo">
                                 <a className="logo" href="#">
-                                <img src={require('../pictures/logo.png')} alt="" />
-                                </a>
+                                    {/* <img src={images['logo.png']} style={nbStyle.logo} alt="" /> */}
+                                    </a>
                             </div>
 
                             <div className="header-search">

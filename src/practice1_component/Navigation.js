@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
 import '../css/slick.css';
 import '../css/nouislider.min.css';
+import '../css/appEshop.css';
 
 
 class Navigation extends Component {
