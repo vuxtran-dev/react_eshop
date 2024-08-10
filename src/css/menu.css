@@ -1,0 +1,10 @@
+.menu{
+    background-color: blue;
+    padding: 4px;
+    margin: auto;
+}
+.menu li {
+    display: inline;
+    margin-right: 10px;
+    justify-content: center;
+}
