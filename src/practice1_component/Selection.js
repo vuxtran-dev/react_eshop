@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
-import '../css/slick.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import '../css/nouislider.min.css';
+import '../css/appEshop.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'font-awesome/css/font-awesome.min.css';
 
 class Selection extends Component {
     render() {
@@ -18,7 +22,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-sm-6">
                                     <a className="banner banner-1" href="#">
-                                        <img src="./img/banner10.jpg" alt="" />
+                                        <img src="../pictures/banner10.jpg" alt="" />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -28,7 +32,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-sm-6">
                                     <a className="banner banner-1" href="#">
-                                        <img src="./img/banner11.jpg" alt="" />
+                                        <img src="../pictures/banner11.jpg" alt="" />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -38,7 +42,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3">
                                     <a className="banner banner-1" href="#">
-                                        <img src="./img/banner12.jpg" alt="" />
+                                        <img src="../pictures/banner12.jpg" alt="" />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -70,7 +74,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-3 col-sm-6 col-xs-6">
                                     <div className="banner banner-2">
-                                        <img src="./img/banner14.jpg" alt="" />
+                                        <img src="../pictures/banner14.jpg" alt="" />
                                         <div className="banner-caption">
                                             <h2 className="white-color">
                                                 NEW
@@ -107,7 +111,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="./img/product01.jpg" alt="" />
+                                                    <img src="../pictures/product01.jpg" alt="" />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -157,58 +161,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="./img/product07.jpg" alt="" />
-                                                </div>
-                                                <div className="product-body">
-                                                    <h3 className="product-price">
-                                                        $32.50 <del className="product-old-price">$45.00</del>
-                                                    </h3>
-                                                    <div className="product-rating">
-                                                        <i className="fa fa-star" />
-                                                        <i className="fa fa-star" />
-                                                        <i className="fa fa-star" />
-                                                        <i className="fa fa-star" />
-                                                        <i className="fa fa-star-o empty" />
-                                                    </div>
-                                                    <h2 className="product-name">
-                                                        <a href="#">Product Name Goes Here</a>
-                                                    </h2>
-                                                    <div className="product-btns">
-                                                        <button className="main-btn icon-btn">
-                                                            <i className="fa fa-heart" />
-                                                        </button>
-                                                        <button className="main-btn icon-btn">
-                                                            <i className="fa fa-exchange" />
-                                                        </button>
-                                                        <button className="primary-btn add-to-cart">
-                                                            <i className="fa fa-shopping-cart" /> Add to Cart
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            {/* /Product Single */}
-                                            {/* Product Single */}
-                                            <div className="product product-single">
-                                                <div className="product-thumb">
-                                                    <div className="product-label">
-                                                        <span>New</span>
-                                                        <span className="sale">-20%</span>
-                                                    </div>
-                                                    <ul className="product-countdown">
-                                                        <li>
-                                                            <span>00 H</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>00 M</span>
-                                                        </li>
-                                                        <li>
-                                                            <span>00 S</span>
-                                                        </li>
-                                                    </ul>
-                                                    <button className="main-btn quick-view">
-                                                        <i className="fa fa-search-plus" /> Quick view
-                                                    </button>
-                                                    <img src="./img/product06.jpg" alt="" />
+                                                    <img src="../pictures/product07.jpg" alt="" />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -259,7 +212,58 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="./img/product08.jpg" alt="" />
+                                                    <img src="../pictures/product06.jpg" alt="" />
+                                                </div>
+                                                <div className="product-body">
+                                                    <h3 className="product-price">
+                                                        $32.50 <del className="product-old-price">$45.00</del>
+                                                    </h3>
+                                                    <div className="product-rating">
+                                                        <i className="fa fa-star" />
+                                                        <i className="fa fa-star" />
+                                                        <i className="fa fa-star" />
+                                                        <i className="fa fa-star" />
+                                                        <i className="fa fa-star-o empty" />
+                                                    </div>
+                                                    <h2 className="product-name">
+                                                        <a href="#">Product Name Goes Here</a>
+                                                    </h2>
+                                                    <div className="product-btns">
+                                                        <button className="main-btn icon-btn">
+                                                            <i className="fa fa-heart" />
+                                                        </button>
+                                                        <button className="main-btn icon-btn">
+                                                            <i className="fa fa-exchange" />
+                                                        </button>
+                                                        <button className="primary-btn add-to-cart">
+                                                            <i className="fa fa-shopping-cart" /> Add to Cart
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {/* /Product Single */}
+                                            {/* Product Single */}
+                                            <div className="product product-single">
+                                                <div className="product-thumb">
+                                                    <div className="product-label">
+                                                        <span>New</span>
+                                                        <span className="sale">-20%</span>
+                                                    </div>
+                                                    <ul className="product-countdown">
+                                                        <li>
+                                                            <span>00 H</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>00 M</span>
+                                                        </li>
+                                                        <li>
+                                                            <span>00 S</span>
+                                                        </li>
+                                                    </ul>
+                                                    <button className="main-btn quick-view">
+                                                        <i className="fa fa-search-plus" /> Quick view
+                                                    </button>
+                                                    <img src="../pictures/product08.jpg" alt="" />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -328,7 +332,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product01.jpg" alt="" />
+                                            <img src="../pictures/product01.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -369,7 +373,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="./img/product06.jpg" alt="" />
+                                                    <img src="../pictures/product06.jpg" alt="" />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">$32.50</h3>
@@ -406,7 +410,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="./img/product05.jpg" alt="" />
+                                                    <img src="../pictures/product05.jpg" alt="" />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -442,7 +446,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="./img/product04.jpg" alt="" />
+                                                    <img src="../pictures/product04.jpg" alt="" />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">$32.50</h3>
@@ -480,7 +484,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="./img/product03.jpg" alt="" />
+                                                    <img src="../pictures/product03.jpg" alt="" />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -529,7 +533,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-8">
                                     <div className="banner banner-1">
-                                        <img src="./img/banner13.jpg" alt="" />
+                                        <img src="../pictures/banner13.jpg" alt="" />
                                         <div className="banner-caption text-center">
                                             <h1 className="primary-color">
                                                 HOT DEAL
@@ -544,7 +548,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-sm-6">
                                     <a className="banner banner-1" href="#">
-                                        <img src="./img/banner11.jpg" alt="" />
+                                        <img src="../pictures/banner11.jpg" alt="" />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -554,7 +558,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-sm-6">
                                     <a className="banner banner-1" href="#">
-                                        <img src="./img/banner12.jpg" alt="" />
+                                        <img src="../pictures/banner12.jpg" alt="" />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -587,7 +591,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product01.jpg" alt="" />
+                                            <img src="../pictures/product01.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">$32.50</h3>
@@ -627,7 +631,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product02.jpg" alt="" />
+                                            <img src="../pictures/product02.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -669,7 +673,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product03.jpg" alt="" />
+                                            <img src="../pictures/product03.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -710,7 +714,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product04.jpg" alt="" />
+                                            <img src="../pictures/product04.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">$32.50</h3>
@@ -746,7 +750,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-3 col-sm-6 col-xs-6">
                                     <div className="banner banner-2">
-                                        <img src="./img/banner15.jpg" alt="" />
+                                        <img src="../pictures/banner15.jpg" alt="" />
                                         <div className="banner-caption">
                                             <h2 className="white-color">
                                                 NEW
@@ -769,7 +773,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product07.jpg" alt="" />
+                                            <img src="../pictures/product07.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -811,7 +815,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product06.jpg" alt="" />
+                                            <img src="../pictures/product06.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -853,7 +857,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product05.jpg" alt="" />
+                                            <img src="../pictures/product05.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -902,7 +906,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product04.jpg" alt="" />
+                                            <img src="../pictures/product04.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">$32.50</h3>
@@ -941,7 +945,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product03.jpg" alt="" />
+                                            <img src="../pictures/product03.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">$32.50</h3>
@@ -980,7 +984,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product02.jpg" alt="" />
+                                            <img src="../pictures/product02.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -1022,7 +1026,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="./img/product01.jpg" alt="" />
+                                            <img src="../pictures/product01.jpg" alt="" />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">

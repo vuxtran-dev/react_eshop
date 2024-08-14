@@ -1,14 +1,23 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
-import '../css/slick.css';
-import '../css/nouislider.min.css';
-
-
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../css/appEshop.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'font-awesome/css/font-awesome.min.css';
+import images from '../pictures/images.js';
 
 
 class Header extends Component {
     render() {
+        const nbStyle = {
+            logo: {
+                width: '100px',
+                height: 'auto',
+                borderRadius: '10px',
+            }
+        };
         return (
             <div>
 
@@ -178,7 +187,7 @@ class Header extends Component {
                                             <div className="shopping-cart-list">
                                                 <div className="product product-widget">
                                                     <div className="product-thumb">
-                                                        <img src="/pictures/thumb-product01.jpg" alt="" />
+                                                        <img src={images.thumb01} alt="product" style={nbStyle} />
                                                     </div>
                                                     <div className="product-body">
                                                         <h3 className="product-price">
@@ -194,7 +203,7 @@ class Header extends Component {
                                                 </div>
                                                 <div className="product product-widget">
                                                     <div className="product-thumb">
-                                                        <img src="/pictures/thumb-product01.jpg" alt="" />
+                                                        <img src={images.thumb01} alt="product" style={nbStyle} />
                                                     </div>
                                                     <div className="product-body">
                                                         <h3 className="product-price">

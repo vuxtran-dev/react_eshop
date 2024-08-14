@@ -1,35 +1,41 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
-import '../css/slick.css';
-import '../css/nouislider.min.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import '../css/appEshop.css'
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'font-awesome/css/font-awesome.min.css';
+import images from '../pictures/images.js';
+
 
 class Footer extends Component {
     render() {
+        const nbStyle = {
+            logo: {
+                width: '100px',
+                height: 'auto',
+                borderRadius: '10px',
+            }
+        };
         return (
             <div>
                 <>
-                    {/* FOOTER */}
                     <footer id="footer" className="section section-grey">
-                        {/* container */}
                         <div className="container">
-                            {/* row */}
                             <div className="row">
-                                {/* footer widget */}
                                 <div className="col-md-3 col-sm-6 col-xs-6">
                                     <div className="footer">
-                                        {/* footer logo */}
                                         <div className="footer-logo">
                                             <a className="logo" href="#">
-                                                <img src="./img/logo.png" alt="" />
+                                                <img src={images.logo} alt="logo" style={nbStyle}/>
                                             </a>
                                         </div>
-                                        {/* /footer logo */}
+
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna
                                         </p>
-                                        {/* footer social */}
                                         <ul className="footer-social">
                                             <li>
                                                 <a href="#">
@@ -57,11 +63,8 @@ class Footer extends Component {
                                                 </a>
                                             </li>
                                         </ul>
-                                        {/* /footer social */}
                                     </div>
                                 </div>
-                                {/* /footer widget */}
-                                {/* footer widget */}
                                 <div className="col-md-3 col-sm-6 col-xs-6">
                                     <div className="footer">
                                         <h3 className="footer-header">My Account</h3>
@@ -84,9 +87,7 @@ class Footer extends Component {
                                         </ul>
                                     </div>
                                 </div>
-                                {/* /footer widget */}
                                 <div className="clearfix visible-sm visible-xs" />
-                                {/* footer widget */}
                                 <div className="col-md-3 col-sm-6 col-xs-6">
                                     <div className="footer">
                                         <h3 className="footer-header">Customer Service</h3>

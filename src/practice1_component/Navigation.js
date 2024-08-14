@@ -1,13 +1,24 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/style.css';
-import '../css/slick.css';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import '../css/nouislider.min.css';
 import '../css/appEshop.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'font-awesome/css/font-awesome.min.css';
+import images from '../pictures/images.js';
 
 
 class Navigation extends Component {
     render() {
+        const nbStyle = {
+            logo: {
+                width: '100px',
+                height: 'auto',
+                borderRadius: '10px',
+            }
+        }
         return (
             <div>
                 <div id="navigation">
@@ -103,7 +114,7 @@ class Navigation extends Component {
                                                 <div className="col-md-12">
                                                     <hr />
                                                     <a className="banner banner-1" href="#">
-                                                        <img src="./img/banner05.jpg" alt="" />
+                                                        <img src={images.banner05}alt="" style={nbStyle}/>
                                                         <div className="banner-caption text-center">
                                                             <h2 className="white-color">NEW COLLECTION</h2>
                                                             <h3 className="white-color font-weak">HOT DEAL</h3>
@@ -215,7 +226,7 @@ class Navigation extends Component {
                                                 </div>
                                                 <div className="col-md-4 hidden-sm hidden-xs">
                                                     <a className="banner banner-2" href="#">
-                                                        <img src="./img/banner04.jpg" alt="" />
+                                                        <img src={images.banner04} alt="" style={nbStyle} />
                                                         <div className="banner-caption">
                                                             <h3 className="white-color">
                                                                 NEW
@@ -482,7 +493,7 @@ class Navigation extends Component {
                                                 <div className="col-md-12">
                                                     <hr />
                                                     <a className="banner banner-1" href="#">
-                                                        <img src="./img/banner05.jpg" alt="" />
+                                                        <img src={images.banner05} alt="" style={nbStyle} />
                                                         <div className="banner-caption text-center">
                                                             <h2 className="white-color">NEW COLLECTION</h2>
                                                             <h3 className="white-color font-weak">HOT DEAL</h3>
@@ -505,7 +516,7 @@ class Navigation extends Component {
                                                 <div className="col-md-3">
                                                     <div className="hidden-sm hidden-xs">
                                                         <a className="banner banner-1" href="#">
-                                                            <img src="./img/banner06.jpg" alt="" />
+                                                            <img src={images.banner06} alt="" style={nbStyle} />
                                                             <div className="banner-caption text-center">
                                                                 <h3 className="white-color text-uppercase">Women’s</h3>
                                                             </div>
@@ -536,7 +547,7 @@ class Navigation extends Component {
                                                 <div className="col-md-3">
                                                     <div className="hidden-sm hidden-xs">
                                                         <a className="banner banner-1" href="#">
-                                                            <img src="./img/banner07.jpg" alt="" />
+                                                            <img src={images.banner07} alt="" style={nbStyle}/>
                                                             <div className="banner-caption text-center">
                                                                 <h3 className="white-color text-uppercase">Men’s</h3>
                                                             </div>
@@ -567,7 +578,7 @@ class Navigation extends Component {
                                                 <div className="col-md-3">
                                                     <div className="hidden-sm hidden-xs">
                                                         <a className="banner banner-1" href="#">
-                                                            <img src="./img/banner08.jpg" alt="" />
+                                                            <img src={images.banner08} alt="" style={nbStyle} />
                                                             <div className="banner-caption text-center">
                                                                 <h3 className="white-color text-uppercase">
                                                                     Accessories
@@ -600,7 +611,7 @@ class Navigation extends Component {
                                                 <div className="col-md-3">
                                                     <div className="hidden-sm hidden-xs">
                                                         <a className="banner banner-1" href="#">
-                                                            <img src="./img/banner09.jpg" alt="" />
+                                                            <img src={images.banner09} alt=""style={nbStyle} />
                                                             <div className="banner-caption text-center">
                                                                 <h3 className="white-color text-uppercase">Bags</h3>
                                                             </div>
