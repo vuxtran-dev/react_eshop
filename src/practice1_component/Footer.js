@@ -21,18 +21,18 @@ class Footer extends Component {
         return (
             <div>
                 <>
-                    <footer id="footer" className="section section-grey">
-                        <div className="container">
-                            <div className="row">
+                    <footer id="footer" className="section section-grey ">
+                        <div className="container flex-col text-">
+                            <div className="row ">
                                 <div className="col-md-3 col-sm-6 col-xs-6">
-                                    <div className="footer">
+                                    <div>
                                         <div className="footer-logo">
                                             <a className="logo" href="#">
                                                 <img src={images.logo} alt="logo" style={nbStyle}/>
                                             </a>
                                         </div>
 
-                                        <p>
+                                        <p >
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                                             eiusmod tempor incididunt ut labore et dolore magna
                                         </p>
@@ -65,8 +65,8 @@ class Footer extends Component {
                                         </ul>
                                     </div>
                                 </div>
-                                <div className="col-md-3 col-sm-6 col-xs-6">
-                                    <div className="footer">
+                                <div className="col-md-3 col-sm-6 col-xs-6 ">
+                                    <div className="footer ">
                                         <h3 className="footer-header">My Account</h3>
                                         <ul className="list-links">
                                             <li>

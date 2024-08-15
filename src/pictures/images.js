@@ -13,6 +13,7 @@ import banner11 from '../pictures/banner11.jpg';
 import banner12 from '../pictures/banner12.jpg';
 import banner13 from '../pictures/banner13.jpg';
 import banner14 from '../pictures/banner14.jpg';
+import banner15 from '../pictures/banner15.jpg';
 import mainProduct01 from '../pictures/main-product01.jpg'
 import mainProduct02 from '../pictures/main-product02.jpg'
 import mainProduct03 from '../pictures/main-product03.jpg'
@@ -46,6 +47,7 @@ const images = {
     banner12,
     banner13,
     banner14,
+    banner15,
     mainProduct01,
     mainProduct02,
     mainProduct03,

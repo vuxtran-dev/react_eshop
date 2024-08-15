@@ -7,9 +7,17 @@ import '../css/nouislider.min.css';
 import '../css/appEshop.css'
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import 'font-awesome/css/font-awesome.min.css';
+import images from '../pictures/images.js';
 
 class Selection extends Component {
     render() {
+        const nbStyle = {
+            logo: {
+                width: '100px',
+                height: 'auto',
+                borderRadius: '10px',
+            }
+        }
         return (
             <div>
                 <>
@@ -22,7 +30,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-sm-6">
                                     <a className="banner banner-1" href="#">
-                                        <img src="../pictures/banner10.jpg" alt="" />
+                                        <img src={images.banner10} alt="" style={nbStyle} />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -32,7 +40,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-sm-6">
                                     <a className="banner banner-1" href="#">
-                                        <img src="../pictures/banner11.jpg" alt="" />
+                                        <img src={images.banner11} alt="" style={nbStyle}  />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -42,7 +50,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3">
                                     <a className="banner banner-1" href="#">
-                                        <img src="../pictures/banner12.jpg" alt="" />
+                                        <img src={images.banner12} alt="" style={nbStyle} />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -72,9 +80,9 @@ class Selection extends Component {
                                 </div>
                                 {/* /section-title */}
                                 {/* banner */}
-                                <div className="col-md-3 col-sm-6 col-xs-6">
-                                    <div className="banner banner-2">
-                                        <img src="../pictures/banner14.jpg" alt="" />
+                                <div className="col-md-3 col-sm-6 col-xs-6 ">
+                                    <div className="banner banner-2 ">
+                                        <img src={images.banner14} alt="" style={nbStyle} />
                                         <div className="banner-caption">
                                             <h2 className="white-color">
                                                 NEW
@@ -87,12 +95,12 @@ class Selection extends Component {
                                 </div>
                                 {/* /banner */}
                                 {/* Product Slick */}
-                                <div className="col-md-9 col-sm-6 col-xs-6">
+                                <div className="col-md-9 col-sm-6 col-xs-6 flex items-center justify-center">
                                     <div className="row">
-                                        <div id="product-slick-1" className="product-slick">
+                                        <div id="product-slick-1" className="product-slick ">
                                             {/* Product Single */}
-                                            <div className="product product-single">
-                                                <div className="product-thumb">
+                                            <div className="product product-single flex items-center justify-center ">
+                                                <div className="product-thumb ">
                                                     <div className="product-label">
                                                         <span>New</span>
                                                         <span className="sale">-20%</span>
@@ -111,7 +119,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="../pictures/product01.jpg" alt="" />
+                                                    <img src={images.product01} alt="" style={nbStyle} />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -142,7 +150,7 @@ class Selection extends Component {
                                             </div>
                                             {/* /Product Single */}
                                             {/* Product Single */}
-                                            <div className="product product-single">
+                                            <div className="product product-single flex items-center justify-center">
                                                 <div className="product-thumb">
                                                     <div className="product-label">
                                                         <span className="sale">-20%</span>
@@ -161,7 +169,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="../pictures/product07.jpg" alt="" />
+                                                    <img src={images.product07} alt="" style={nbStyle} />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -192,8 +200,8 @@ class Selection extends Component {
                                             </div>
                                             {/* /Product Single */}
                                             {/* Product Single */}
-                                            <div className="product product-single">
-                                                <div className="product-thumb">
+                                            <div className="product product-single flex items-center justify-center ">
+                                                <div className="product-thumb flex items-center justify-center">
                                                     <div className="product-label">
                                                         <span>New</span>
                                                         <span className="sale">-20%</span>
@@ -212,7 +220,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="../pictures/product06.jpg" alt="" />
+                                                    <img src={images.product06} alt="" style={nbStyle} />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -243,7 +251,7 @@ class Selection extends Component {
                                             </div>
                                             {/* /Product Single */}
                                             {/* Product Single */}
-                                            <div className="product product-single">
+                                            <div className="product product-single flex items-center justify-center">
                                                 <div className="product-thumb">
                                                     <div className="product-label">
                                                         <span>New</span>
@@ -263,7 +271,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="../pictures/product08.jpg" alt="" />
+                                                    <img src={images.product08} alt="" style={nbStyle} />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -314,11 +322,11 @@ class Selection extends Component {
                                 {/* Product Single */}
                                 <div className="col-md-3 col-sm-6 col-xs-6">
                                     <div className="product product-single product-hot">
-                                        <div className="product-thumb">
+                                        <div className="product-thumb ">
                                             <div className="product-label">
                                                 <span className="sale">-20%</span>
                                             </div>
-                                            <ul className="product-countdown">
+                                            <ul className="product-countdown ">
                                                 <li>
                                                     <span>00 H</span>
                                                 </li>
@@ -332,7 +340,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product01.jpg" alt="" />
+                                            <img src={images.product01} alt=" " style={nbStyle}  />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -364,16 +372,16 @@ class Selection extends Component {
                                 </div>
                                 {/* /Product Single */}
                                 {/* Product Slick */}
-                                <div className="col-md-9 col-sm-6 col-xs-6">
+                                <div className="col-md-9 col-sm-6 col-xs-6 flex items-center justify-center">
                                     <div className="row">
                                         <div id="product-slick-2" className="product-slick">
                                             {/* Product Single */}
-                                            <div className="product product-single">
-                                                <div className="product-thumb">
+                                            <div className="product product-single flex items-center justify-center ">
+                                                <div className="product-thumb ">
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="../pictures/product06.jpg" alt="" />
+                                                    <img src={images.product06} alt="" style={nbStyle} />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">$32.50</h3>
@@ -402,7 +410,7 @@ class Selection extends Component {
                                             </div>
                                             {/* /Product Single */}
                                             {/* Product Single */}
-                                            <div className="product product-single">
+                                            <div className="product product-single flex items-center justify-center">
                                                 <div className="product-thumb">
                                                     <div className="product-label">
                                                         <span className="sale">-20%</span>
@@ -410,7 +418,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="../pictures/product05.jpg" alt="" />
+                                                    <img src={images.product05} alt="" style={nbStyle} />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -441,12 +449,12 @@ class Selection extends Component {
                                             </div>
                                             {/* /Product Single */}
                                             {/* Product Single */}
-                                            <div className="product product-single">
+                                            <div className="product product-single flex items-center justify-center">
                                                 <div className="product-thumb">
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="../pictures/product04.jpg" alt="" />
+                                                    <img src={images.product04} alt="" style={nbStyle} />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">$32.50</h3>
@@ -475,7 +483,7 @@ class Selection extends Component {
                                             </div>
                                             {/* /Product Single */}
                                             {/* Product Single */}
-                                            <div className="product product-single">
+                                            <div className="product product-single flex items-center justify-center">
                                                 <div className="product-thumb">
                                                     <div className="product-label">
                                                         <span>New</span>
@@ -484,7 +492,7 @@ class Selection extends Component {
                                                     <button className="main-btn quick-view">
                                                         <i className="fa fa-search-plus" /> Quick view
                                                     </button>
-                                                    <img src="../pictures/product03.jpg" alt="" />
+                                                    <img src={images.product03} alt="" style={nbStyle} />
                                                 </div>
                                                 <div className="product-body">
                                                     <h3 className="product-price">
@@ -525,15 +533,15 @@ class Selection extends Component {
                     </div>
                     {/* /section */}
                     {/* section */}
-                    <div className="section section-grey">
+                    <div className="section section-grey flex items-center justify-center">
                         {/* container */}
                         <div className="container">
                             {/* row */}
                             <div className="row">
                                 {/* banner */}
-                                <div className="col-md-8">
-                                    <div className="banner banner-1">
-                                        <img src="../pictures/banner13.jpg" alt="" />
+                                <div className="col-md-8 ">
+                                    <div className="banner banner-1 ">
+                                        <img src={images.banner13} alt="" style={nbStyle} />
                                         <div className="banner-caption text-center">
                                             <h1 className="primary-color">
                                                 HOT DEAL
@@ -548,7 +556,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-sm-6">
                                     <a className="banner banner-1" href="#">
-                                        <img src="../pictures/banner11.jpg" alt="" />
+                                        <img src="../pictures/banner11.jpg" alt="" style={nbStyle} />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -558,7 +566,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-4 col-sm-6">
                                     <a className="banner banner-1" href="#">
-                                        <img src="../pictures/banner12.jpg" alt="" />
+                                        <img src={images.banner12} alt="" style={nbStyle} />
                                         <div className="banner-caption text-center">
                                             <h2 className="white-color">NEW COLLECTION</h2>
                                         </div>
@@ -591,7 +599,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product01.jpg" alt="" />
+                                            <img src={images.product01} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">$32.50</h3>
@@ -631,7 +639,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product02.jpg" alt="" />
+                                            <img src={images.product02} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -673,7 +681,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product03.jpg" alt="" />
+                                            <img src={images.product03} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -714,7 +722,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product04.jpg" alt="" />
+                                            <img src={images.product04} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">$32.50</h3>
@@ -750,7 +758,7 @@ class Selection extends Component {
                                 {/* banner */}
                                 <div className="col-md-3 col-sm-6 col-xs-6">
                                     <div className="banner banner-2">
-                                        <img src="../pictures/banner15.jpg" alt="" />
+                                        <img src={images.banner15} alt="" style={nbStyle} />
                                         <div className="banner-caption">
                                             <h2 className="white-color">
                                                 NEW
@@ -773,7 +781,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product07.jpg" alt="" />
+                                            <img src={images.product07} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -815,7 +823,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product06.jpg" alt="" />
+                                            <img src={images.product06} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -857,7 +865,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product05.jpg" alt="" />
+                                            <img src={images.product05} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -906,7 +914,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product04.jpg" alt="" />
+                                            <img src={images.product04} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">$32.50</h3>
@@ -945,7 +953,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product03.jpg" alt="" />
+                                            <img src={images.product03} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">$32.50</h3>
@@ -984,7 +992,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product02.jpg" alt="" />
+                                            <img src={images.product02} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
@@ -1026,7 +1034,7 @@ class Selection extends Component {
                                             <button className="main-btn quick-view">
                                                 <i className="fa fa-search-plus" /> Quick view
                                             </button>
-                                            <img src="../pictures/product01.jpg" alt="" />
+                                            <img src={images.product01} alt="" style={nbStyle} />
                                         </div>
                                         <div className="product-body">
                                             <h3 className="product-price">
